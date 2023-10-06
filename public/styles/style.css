@@ -223,6 +223,10 @@ body.loaded {
 	margin-block-end: 45px;
 	animation: rotate360 10s linear infinite;
 }
+.answer {
+  visibility: hidden;
+  position: absolute;
+}
 
 @keyframes rotate360 {
 	0% {

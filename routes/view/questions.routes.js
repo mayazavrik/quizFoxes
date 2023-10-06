@@ -1,3 +1,4 @@
+/* eslint-disable no-lonely-if */
 const router = require('express').Router();
 const QuestionList = require('../../components/QuestionList');
 const QuestionPage = require('../../components/QuestionPage');
@@ -59,7 +60,22 @@ router.put('/:themeId/questions/:questId', async (req, res) => {
 router.post('/:themeId/questions/:questId', async (req, res) => {
   try {
     const { listId, contId, answerInput } = req.body;
-    console.log(req.body);
+    let result;
+    console.log(listId);
+    const question = await Question.findOne({ where: { id: listId } });
+    if (answerInput === question.textAnswer) {
+      console.log('hello');
+      result = 'Молодец!';
+    } else {
+      result = '!ХОРООООШ';
+    }
+    const html = res.renderComponent(
+      QuestionList,
+      { question, result },
+      { htmlOnly: true },
+    );
+
+    res.json({ message: 'success', html });
   } catch ({ message }) {
     res.json({ message });
   }

@@ -3,10 +3,16 @@ const React = require('react');
 module.exports = function QuestionList({ title, question }) {
   return (
     <div data-itemid={question.id} className="quest-list" title={title}>
+      {question.imgQuestion !== undefined && (
+        <div className="quest-img">
+          <img className="quest-img" src={question.imgQuestion} alt="" />
+        </div>
+      )}
       <h2>{question.textQuestion}</h2>
       <form className="answer-form" id={question.id} method="POST">
-        <label className='answerlabel' htmlFor="">Введите свой ответ</label>
+        <label htmlFor="">Введите свой ответ</label>
         <input name="answer-input" type="text" />
+        <input className="inputAns" name="answerInput" type="text" />
         <button type="submit" className="btn btn-answer">
           Отправить ответ
         </button>

@@ -179,6 +179,11 @@ font-weight: bold;
   
 }
 
+.quest-img{
+  width: 400px;
+
+}
+
 body.loaded {
 	overflow: overlay;
 }

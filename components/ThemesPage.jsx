@@ -13,9 +13,9 @@ function ThemesPage({ title, user, themes }) {
             
 
             if (el.id === 1) {
-              return <a href={`/themes/${el.id}/questions/1`}>{el.name}</a>;
+              return <a className='link' href={`/themes/${el.id}/questions/1`}>{el.name}</a>;
             } else {
-              return <a href={`/themes/${el.id}/questions/8`}>{el.name}</a>;
+              return <a className='link' href={`/themes/${el.id}/questions/8`}>{el.name}</a>;
             }
           })}
         </div>

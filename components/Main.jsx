@@ -7,10 +7,10 @@ function Main({ title, user }) {
   return (
     
     <Layout title={title} user={user}>
-            <div className="preload" data-preaload>
+            {/* <div className="preload" data-preaload>
  <div className="circle"></div>
  <p className="text">Добро пожаловать на квиз</p>
-</div>
+</div> */}
      
       <RegForm />
     </Layout>

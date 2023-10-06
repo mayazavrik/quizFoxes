@@ -7,7 +7,7 @@ function Navbar({ user }) {
       <div className="nav-wrapper">
         <ul id="nav-mobile" className="left hide-on-med-and-down">
           {user && (
-            <li>{`Hello ${user.name}! Ваш результат: ${user.score} `}</li>
+            <li>{`Hello ${user.name}!  `}</li>
           )}
         </ul>
       </div>

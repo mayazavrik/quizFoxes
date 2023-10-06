@@ -137,20 +137,19 @@ h1, h2{
 
 }
 .quest-container{
+ 
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #D9CA82;
   border: 5px solid #17A68C;
-  padding: 20px;
+  /* padding: 20px; */
   gap: 50px;
-  margin: 60px;
+  margin: 160px;
   border-radius: 10px;
   width: 800px;
   height: 400px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   flex-direction: column;
 }
 
@@ -166,6 +165,7 @@ font-weight: bold;
 }
  
 .quest-list{
+  padding: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -173,17 +173,41 @@ font-weight: bold;
   gap: 20px;
 
 }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .answer-form{
   
   
 }
 
-.quest-img{
-  width: 400px;
+.link {
+  background-color: #F2CF1D;
+  color: #17A68C;
+border: 2px solid #17A68C;
 
 }
 
+.quest-img{
+  width: 400px;
+  position: absolute ;
+  translate:30% -60%;
+
+}
+.answer{
+  position: absolute ;
+  translate:50% -15%;
+  
+}
+li {
+  color: #17A68C;
+  font-size: larger;
+  font-weight: bold;
+}
 body.loaded {
 	overflow: overlay;
 }
@@ -227,6 +251,13 @@ body.loaded {
   visibility: hidden;
   position: absolute;
 }
+.answer-img{
+  width: 500px
+}
+
+/* .ans-img{
+  width: 200px
+} */
 
 @keyframes rotate360 {
 	0% {

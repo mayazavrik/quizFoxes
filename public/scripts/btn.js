@@ -1,6 +1,7 @@
 /* eslint-disable no-lonely-if */
 const container = document.querySelector('.quest-container');
 const ansForm = document.querySelector('.answer-form');
+let answDiv = document.querySelector('.answer');
 let counter = 0;
 if (container) {
   container.addEventListener('click', async (e) => {
@@ -24,11 +25,13 @@ if (container) {
       if (data.message === 'success') {
         list.remove();
         container.insertAdjacentHTML('beforeend', data.html);
+        answDiv.style.visibility = 'hidden';
         document
           .querySelector('.answer-form')
           .addEventListener('submit', otvet);
       } else {
         window.location.assign('/themes');
+        answDiv.style.visibility = 'hidden';
       }
     }
   });
@@ -60,6 +63,13 @@ async function otvet(event) {
   if (data.message === 'success') {
     list.remove();
     container.insertAdjacentHTML('beforeend', data.html);
+    answDiv = document.querySelector('.answer');
+    let que = document.querySelector('.quest-img');
+
+    console.log(12);
+    answDiv.style.color = 'red';
+    que.style.visibility = 'hidden';
+    answDiv.style.visibility = 'visible';
   }
   document.querySelector('.answer-form').addEventListener('submit', otvet);
 }

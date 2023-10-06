@@ -1,13 +1,31 @@
+.regForm{
+  background-color: #D9CA82;
+  border: 5px solid #17A68C;
+  /* padding: 20px; */
+  gap: 50px;
+  /* margin: 20px; */
+  border-radius: 10px;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
 .divInput {
   width: 400px;
   height: 200px;
   border-radius: 20px;
-  border: 5px solid black;
-  background-color: rgb(177, 181, 180);
+  /* border: 5px solid #17A68C; */
+  background-color: #D9CA82;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  gap: 40px;
 
   /* margin-left: 100px; */
 }
@@ -17,9 +35,94 @@
 }
 .regBtn {
   font-weight: bold;
-  background-color: rgb(86, 95, 92);
+  background-color: #F2CF1D;
   width: 200px;
   height: 50px;
   border-radius: 20px;
+
+  color: #17A68C;
   /* margin-right: 20px; */
+}
+.divReg {
+  
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: 20px; */
+  padding: 20px;
+  gap: 20px;
+}
+
+.ThemesCard{
+  
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.choseCard{
+  background-color: #D9CA82;
+  width: 400px;
+  height: 200px;
+  border-radius: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
+  text-decoration: black;
+  background-color: #D9CA82;
+  border: 5px solid #17A68C;
+  /* padding: 20px; */
+  gap: 50px;
+  /* margin: 20px; */
+  border-radius: 10px;
+  width: 800px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav-wrapper {
+  
+  background-color: #F2CF1D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: rgb(189, 214, 189)
+}
+h1{
+  color: #17A68C;
+}
+
+.enterName {
+  color: #17A68C;
+  font-size: xx-large;
+
+
+}
+
+.link:visited {
+  color: #17A68C;
+
+}
+.link {
+  color: #17A68C;
+
 }

@@ -4,8 +4,8 @@ const Layout = require('./Layout');
 function RegForm() {
   return (
     <div className="divReg">
-      <form action="/themes" id="regForm" method="POST">
-        <label>Как Вас зовут?</label>
+      <form className="regForm" action="/themes" id="regForm" method="POST">
+        <label className='enterName'>Как Вас зовут?</label>
         <div className="divInput">
           <input className="regName" name="name" />
           <button className="regBtn" type="submit">

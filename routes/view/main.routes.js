@@ -7,7 +7,7 @@ router.get('/', (req, res) => {
   res.send(html);
 });
 
-router.post('/', async (req, res) => {
+router.post('/themes', async (req, res) => {
   const { name } = req.body;
 
   const user = await User.create({ name, score: 0 });

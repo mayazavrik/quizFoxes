@@ -30,7 +30,7 @@ router.put('/:themeId/questions/:questId', async (req, res) => {
     listId = +listId + 1;
     let question;
     if (+contId === 1) {
-      if (+listId <= 5) {
+      if (+listId <= 7) {
         question = await Question.findOne({ where: { id: +listId } });
 
         const html = res.renderComponent(
@@ -42,7 +42,7 @@ router.put('/:themeId/questions/:questId', async (req, res) => {
         res.json({ message: 'success', html });
       } else res.json({ message: 'false' });
     } else {
-      if (+listId > 5 && +listId <= 10) {
+      if (+listId > 7 && +listId <= 14) {
         question = await Question.findOne({ where: { id: +listId } });
         const html = res.renderComponent(
           QuestionList,
@@ -52,6 +52,14 @@ router.put('/:themeId/questions/:questId', async (req, res) => {
         res.json({ message: 'success', html });
       } else res.json({ message: 'false' });
     }
+  } catch ({ message }) {
+    res.json({ message });
+  }
+});
+router.post('/:themeId/questions/:questId', async (req, res) => {
+  try {
+    const { listId, contId, answerInput } = req.body;
+    console.log(req.body);
   } catch ({ message }) {
     res.json({ message });
   }

@@ -7,13 +7,13 @@ module.exports = {
 			"Themes",
 			[
 				{
-					name: "Theme1",
+					name: "Low-cost cosplay",
 					createdAt: new Date(),
 					updatedAt: new Date(),
 				},
 
 				{
-					name: "Theme2",
+					name: "Memes",
 					createdAt: new Date(),
 					updatedAt: new Date(),
 				},

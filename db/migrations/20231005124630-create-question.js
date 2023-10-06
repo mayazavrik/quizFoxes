@@ -10,11 +10,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       textQuestion: {
-        allowNull: false,
+        
         type: Sequelize.TEXT
       },
-      answerQuestion: {
-        allowNull: false,
+      imgQuestion: {
+        
+        type: Sequelize.TEXT
+      },
+      textAnswer: {
+        
+        type: Sequelize.TEXT
+      },
+      imgAnswer: {
+       
         type: Sequelize.TEXT
       },
       idTheme: {

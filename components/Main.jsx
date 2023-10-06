@@ -5,7 +5,7 @@ const RegForm = require('./RegForm');
 function Main({ title, user }) {
   return (
     <Layout title={title} user={user}>
-      <h1>Main page</h1>
+     
       <RegForm />
     </Layout>
   );

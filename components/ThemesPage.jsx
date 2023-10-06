@@ -7,15 +7,11 @@ function ThemesPage({ title, user, themes }) {
       <div className="ThemesCard">
         <div className="choseCard">
           {themes.map((el) => {
-
-            return <a className='link' href={`/themes/${el.id}/questions/1`}>{el.name}</a>;
-
             if (el.id === 1) {
               return <a href={`/themes/${el.id}/questions/1`}>{el.name}</a>;
             } else {
-              return <a href={`/themes/${el.id}/questions/6`}>{el.name}</a>;
+              return <a href={`/themes/${el.id}/questions/8`}>{el.name}</a>;
             }
-
           })}
         </div>
       </div>

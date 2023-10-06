@@ -1,6 +1,7 @@
 const React = require('react');
 
 function Navbar({ user }) {
+  
   return (
     <nav>
       <div className="nav-wrapper">

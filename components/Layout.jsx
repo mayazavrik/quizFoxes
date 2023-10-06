@@ -14,7 +14,7 @@ module.exports = function Layout({ title, children, user }) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link rel="stylesheet" href="/styles/style.css" />
         <script defer src="/scripts/script.js" />
-        <script defer src="/scripts/reg.js" />
+        <script defer src="/scripts/btn.js" />
       </head>
       <body>
         <Navbar user={user} />
